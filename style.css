@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Fallout";
+    src: url("fallout.ttf");
+}
+* {
+    font-family: "Fallout";
+}
+
+.banner-container {
+    background-color: green;
+    height: 20vw;
+}
+
+.slogan {
+    animation: 1s linear 0s forwards move;
+    background-color: red;
+    width: 30vw;
+    font-size: 5vw;
+    padding: 5px;
+}
+
+/* --- Animations --- */
+
+@keyframes move {
+    100% {
+      translate: 50%;  
+    }
+}
