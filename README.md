@@ -1,7 +1,7 @@
-# Banner on CSS
+# CSS Banner
 
 ## Description
-Banner for site. Used only html and css
+Banner for the site. Only html and css are used.
 
 ## Source
 1. `index.html` - main banner content
