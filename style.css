@@ -9,20 +9,70 @@
 .banner-container {
     background-color: green;
     height: 20vw;
+    overflow: hidden;
 }
 
-.slogan {
-    animation: 1s linear 0s forwards move;
+.banner-header {
+    animation: 2s linear 0s forwards move-header;
     background-color: red;
-    width: 30vw;
+    width: 100%;
+    height: 6vw;
+    line-height: 7vw;
     font-size: 5vw;
-    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    color: yellow;
+    box-shadow: 0px 5px 5px black;
+    z-index: 100;
+}
+
+.banner-offer {
+    animation: 1.5s linear 0s forwards move-offer;
+    background-color: rgb(211, 0, 0);
+    width: 100%;
+    height: 6vw;
+    line-height: 7vw;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 5%;
+    color: yellow;
+    box-shadow: 0px 5px 5px black;
+    z-index: 5;
+}
+
+.logo {
+    animation: 1.5s linear 0s forwards move-logo;
+    z-index: 15;
 }
 
 /* --- Animations --- */
 
-@keyframes move {
+@keyframes move-header {
+    0% {
+        rotate: -0.001turn;
+        translate: -100%;
+    }
+
     100% {
-      translate: 50%;  
+        rotate: -0.01turn;
+        translate: -20%;
+    }
+}
+@keyframes move-offer {
+    0% {
+        transform: translateX(-100%) rotate(-0.001turn) translateY(-95%)
+    }
+
+    100% {
+        transform: translateX(-10%) rotate(-0.01turn) translateY(-95%)
+    }
+}
+@keyframes move-logo {
+    0% {
+        transform: translateX(100%) translateY(-100%) scale(60%);
+    }
+
+    100% {
+        transform: translateX(60%) translateY(-100%) scale(50%);
     }
 }
